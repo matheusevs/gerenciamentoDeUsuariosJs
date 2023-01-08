@@ -1,0 +1,1 @@
+Projeto para gerenciamento de usuário, utilizando JavaScript. Projeto desenvolvido como exemplo do Curso Completo de JavaScript na Udemy pela HCode.
