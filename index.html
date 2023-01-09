@@ -150,48 +150,7 @@
                     <th>Ações</th>
                   </tr>
                 </thead>
-                <tbody>
-
-                  <tr>
-                    <td><img src="dist/img/user1-128x128.jpg" alt="User Image" class="img-circle img-sm"></td>
-                    <td>Fulano</td>
-                    <td>fulano@hcode.com.br</td>
-                    <td>Sim</td>
-                    <td>02/04/2018</td>
-                    <td>
-                      <button type="button" class="btn btn-primary btn-xs btn-flat">Editar</button>
-                      <button type="button" class="btn btn-danger btn-xs btn-flat">Excluir</button>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <img src="dist/img/user1-128x128.jpg" alt="User Image" class="img-circle img-sm">
-                    </td>
-                    <td>Fulano</td>
-                    <td>fulano@hcode.com.br</td>
-                    <td>Sim</td>
-                    <td>02/04/2018</td>
-                    <td>
-                      <button type="button" class="btn btn-primary btn-xs btn-flat">Editar</button>
-                      <button type="button" class="btn btn-danger btn-xs btn-flat">Excluir</button>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <img src="dist/img/user1-128x128.jpg" alt="User Image" class="img-circle img-sm">
-                    </td>
-                    <td>Fulano</td>
-                    <td>fulano@hcode.com.br</td>
-                    <td>Sim</td>
-                    <td>02/04/2018</td>
-                    <td>
-                      <button type="button" class="btn btn-primary btn-xs btn-flat">Editar</button>
-                      <button type="button" class="btn btn-danger btn-xs btn-flat">Excluir</button>
-                    </td>
-                  </tr>
-                  
+                <tbody id="table-users">                  
                 </tbody>
               </table>
             </div>
@@ -244,7 +203,7 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
+                  <input type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name" required>
                 </div>
                 <div class="form-group">
                   <label>Gênero</label>
@@ -512,11 +471,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail">E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
+                  <input type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
+                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
@@ -555,6 +514,9 @@
 
 </div>
 
+<script src="classes/Utils.js"></script>
+<script src="models/User.js"></script>
+<script src="controllers/UserController.js"></script>
 <script src="index.js"></script>
 
 </body>
